@@ -26,16 +26,11 @@ let handler = async (m, { text, usedPrefix, command }) => {
 
     await fs.writeFileSync(path,`/*####################################
 
-               
-
               manz - wabot
 
              MADE BY MANZKNEZ
 
-       
-
-✅ WhatsApp: wa.me/62889897216271
-
+✅ WhatsApp: wa.me/6288989721627
 #####################################*/` + "\n\n" + m.quoted.text);
 
     m.reply(`tersimpan di ${path}`);
