@@ -17,7 +17,7 @@ const axios = require('axios');
 const { generateWAMessageContent, generateWAMessageFromContent, proto } = require('@whiskeysockets/baileys');
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) return m.reply(global.try || `• *Example:* ${usedPrefix + command} kucing`);
-await m.reply(global.wait);
+await m.reply(info.wait);
 async function createImage(url) {
 const { imageMessage } = await generateWAMessageContent({
 image: { url }
